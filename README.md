@@ -8,7 +8,7 @@
 - Copy color to clipboard.
 
 ## Demo
-![demo](color-flipper-demo.gif)
+![demo](random-color-flipper-demo.gif)
 
 ## Link
 Live-site URL: 
