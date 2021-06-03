@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    transition: background-color ease-in 200ms;
 }
 
 main {
