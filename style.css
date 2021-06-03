@@ -11,6 +11,7 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
+
 main {
     width: 30%;
     height: 140px;
@@ -23,36 +24,50 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+
 h1 {
     font-size: 1.3rem;
 }
+
+.row-two-wrapper {
+    display: flex;
+}
 h2 {
     font-size: 1.5rem;
+    width: auto;
 }
-.colorModes {
-    width: 120px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-.colorModes button {
+.copy-btn {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
     color: #fff;
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
-}
-.colorModes button:hover {
-    color: #e4e4e4;
 }
 
-#genColorBtn {
+.row-three-wrapper {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.color-mode-btns {
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gen-color-btn {
     width: 120px;
     color: #fff;
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
 }
-#genColorBtn:hover {
+
+button:hover {
     color: #e4e4e4;
 }
 
