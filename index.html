@@ -9,19 +9,32 @@
             href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="style.css" />
         <title>Color Flipper</title>
     </head>
     <body>
         <main>
             <h1>Random Color Flipper</h1>
-            <h2>Color: <span class="colorName">rgb(255, 255, 255)</span></h2>
-            <div class="colorModes">
-                <button id="hexBtn">hex</button>
-                <button id="rgbBtn">rgb</button>
-                <button id="hslBtn">hsl</button>
+            <div class="row-two-wrapper">
+                <h2>
+                    Color: <span class="color-name">rgb(255, 255, 255)</span>
+                </h2>
+                <button class="copy-btn">
+                    <i class="far fa-clipboard fa-lg"></i>
+                </button>
             </div>
-            <button id="genColorBtn">Generate Color</button>
+            <div class="row-three-wrapper">
+                <button class= "color-mode-btns" id="hexBtn">hex</button>
+                <button class= "color-mode-btns" id="rgbBtn">rgb</button>
+                <button class= "color-mode-btns" id="hslBtn">hsl</button>
+            </div>
+            <button class="gen-color-btn">Generate Color</button>
         </main>
 
         <script src="app.js"></script>
