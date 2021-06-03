@@ -25,16 +25,13 @@ main {
     justify-content: space-between;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 1.3rem;
 }
 
 .row-two-wrapper {
     display: flex;
-}
-h2 {
-    font-size: 1.5rem;
-    width: auto;
 }
 .copy-btn {
     height: 30px;
