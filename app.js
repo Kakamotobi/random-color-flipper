@@ -5,12 +5,33 @@ const rgbBtn = document.querySelector("#rgbBtn");
 const hslBtn = document.querySelector("#hslBtn");
 
 // Generate Random Color
+let currRGB;
 const genRandomColor = () => {
     const r = Math.floor(Math.random() * 255 + 1);
     const g = Math.floor(Math.random() * 255 + 1);
     const b = Math.floor(Math.random() * 255 + 1);
+    currRGB = [r, g, b];
     return new Color(r, g, b);
 };
+
+// Event Listeners
+genColorBtn.addEventListener("click", function () {
+    const newColor = genRandomColor();
+    document.body.style.backgroundColor = newColor.rgb();
+    colorName.innerText = newColor.rgb();
+});
+
+hexBtn.addEventListener("click", function () {
+    colorName.innerText = new Color(...currRGB).hex();
+});
+
+rgbBtn.addEventListener("click", function () {
+    colorName.innerText = new Color(...currRGB).rgb();
+});
+
+hslBtn.addEventListener("click", function () {
+    colorName.innerText = new Color(...currRGB).hsl();
+});
 
 // Color Model Conversions
 class Color {
