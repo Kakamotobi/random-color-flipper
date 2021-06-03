@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    width: 30%;
+    width: 400px;
     height: 140px;
     padding: 20px;
     color: #fff;
@@ -72,13 +72,10 @@ button:hover {
 }
 
 /* Media Query */
-@media screen and (max-width: 1024px) {
-    main {
-        width: 40%;
-    }
-}
 @media screen and (max-width: 425px) {
     main {
-        width: 300px;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 }
