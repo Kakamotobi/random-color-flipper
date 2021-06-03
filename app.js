@@ -1,5 +1,6 @@
-const colorName = document.querySelector(".colorName");
-const genColorBtn = document.querySelector("#genColorBtn");
+const colorName = document.querySelector(".color-name");
+const copyBtn = document.querySelector(".copy-btn");
+const genColorBtn = document.querySelector(".gen-color-btn");
 const hexBtn = document.querySelector("#hexBtn");
 const rgbBtn = document.querySelector("#rgbBtn");
 const hslBtn = document.querySelector("#hslBtn");
@@ -100,4 +101,15 @@ class Color {
         this.s = s;
         this.l = l;
     }
+}
+
+// Copy to Clipboard
+copyBtn.addEventListener("click", copy);
+
+// Copy color
+function copy() {
+    const clipboard = navigator.clipboard;
+    clipboard.writeText(colorName.innerText).then(() => {
+        // copyBtn.style.backgroundColor = "blue";
+    });
 }
